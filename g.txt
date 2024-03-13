@@ -1,0 +1,160 @@
+1.
+create a repo
+copy url
+create a folder
+open terminal
+git clone
+cd tab
+craete file in repo
+git pull in vs code
+create file in vs code
+git add .
+git commit -m "First"
+git push
+
+
+2.
+create a repo
+copy url
+create a folder
+open terminal
+git clone
+cd tab
+git branch
+git branch -c feature-branch (create feature-branch)
+git checkout feature-branch ( to switch)
+create a.txt
+git add a.txt
+git commit -m "FS"
+git push origin feature-branch
+create b.txt
+git add b.txt
+git commit -m "SC"
+git push origin feature-branch
+create c.txt
+git add c.txt
+git checkout main  (a.txt,b.txt disapppears bcoz we are changing the branch)
+git merge feature-branch
+git push origin main
+git add c.txt
+git stash save "added c file" (temporary storage, c disappears)
+git checkout main
+git stash apply( c reappears)
+git push origin main
+
+
+3.
+create a repo
+copy url
+create a folder
+open terminal
+git clone
+cd tab
+git branch
+git branch -c feature-branch
+git branch
+ git push origin feature-branch
+go to git account create one file in each branch
+come to vs code
+git checkout main
+git fetch
+git rebase origin/feature-branch( feature branch file comes to main branch)
+git pull origin main
+git push origin main
+git checkout feature-branch
+create a file c.txt in vs code
+git add c.txt
+git checkout main
+git merge feature-branch -m "merge feature-branch into main"
+git push origin main
+
+
+4.
+create a repo
+copy url
+create a folder
+open terminal
+git clone
+cd tab
+create a.txt
+git add a.txt
+git commit -m "FC"
+git push origin main
+create b.txt
+git add b.txt
+git commit -m "SC"
+git push origin main
+git tag v1.0( tag creation)
+git tag
+git push origin v1.0
+craete c.txt
+git add c.txt
+git commit -m "TC"
+git push origin main
+git checkout -b version v1.0( switch to version)
+git push origin version
+
+
+5.
+create a repo
+copy url
+create a folder
+open terminal
+git clone
+cd tab
+create a.txt
+git add a.txt
+git commit -m "FC"
+git push origin main
+ git checkout -b source_branch
+git branch
+create b.txt
+git add .
+git commit -m "File B"
+git push origin source_branch
+create c.txt
+git add .
+git commit -m "File c"
+git push origin source_branch
+git branch
+git checkout main
+git cherry-pick source_branch~2..source_branch
+git branch
+git add .
+git commit -m "Final commit"
+git log
+git push origin main
+
+
+6.
+create a repo
+copy url
+create a folder
+open terminal
+git clone
+cd tab
+create a.txt
+git add a.txt
+git commit -m "FC"
+git push
+create b.txt
+git add b.txt
+git commit -m "SC"
+git push
+create c.txt
+git add c.txt
+git commit -m "TC"
+git push
+create d.txt
+git add d.txt
+git commit -m "FC"
+git push
+create e.txt
+git add e.txt
+git commit -m "FifthC"
+git push
+git log
+git show <commit id>
+git log --author="sinchanadp03" --since="2024-02-26" --until="2024-02-28"
+git log -n 3
+git revert <commit id>
