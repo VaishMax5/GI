@@ -59,7 +59,7 @@ come to vs code
 git checkout main
 git fetch
 git rebase origin/feature-branch( feature branch file comes to main branch)
-git pull origin main
+git pull origin
 git push origin main
 git checkout feature-branch
 create a file c.txt in vs code
